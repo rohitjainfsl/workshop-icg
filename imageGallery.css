@@ -26,6 +26,7 @@ h1 {
   width: 33%;
   height: 300px;
   position: relative;
+  border-radius: 10px;
   overflow: hidden;
 }
 #gallery .container .popup {
