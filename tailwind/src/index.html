@@ -4,6 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Layout</title>
+    <link rel="stylesheet" href="output.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="wrapper">
+      <header class="bg-rose-500 flex justify-between items-center px-12 py-8">
+        <h1 class="font-bold text-3xl">Logo</h1>
+        <ul class="flex">
+          <li><a href="" class="text-white px-2 mx-1">Home</a></li>
+          <li><a href="" class="text-white px-2 mx-1">About</a></li>
+          <li><a href="" class="text-white px-2 mx-1">Gallery</a></li>
+          <li><a href="" class="text-white px-2 mx-1">Blog</a></li>
+          <li><a href="" class="text-white px-2 mx-1">Contact Us</a></li>
+          <li>
+            <a
+              href=""
+              class="text-black rounded bg-white px-8 py-2 mx-1 font-bold"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </header>
+
+      <section id="hero" class="bg-gray-500 py-20 px-12 flex items-center">
+        <div class="w-2/4 text-white">
+          <h2 class="font-bold text-3xl mb-4">Chotu Chai Wala</h2>
+          <p class="mb-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+            quam!
+          </p>
+          <a
+            href=""
+            class="text-black rounded-lg inline-block mt-2 bg-white px-8 py-2 text-xl mx-1 font-bold"
+            >Contact Us</a
+          >
+        </div>
+        <div class="w-2/4">
+          <img class="h-64 w-full" src="images/resturent.jpeg" alt="" />
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
