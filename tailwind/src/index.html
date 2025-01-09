@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Layout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="output.css" />
   </head>
   <body>
@@ -19,7 +26,7 @@
           <li>
             <a
               href=""
-              class="text-black rounded bg-white px-8 py-2 mx-1 font-bold"
+              class="text-white rounded bg-black px-8 py-2 mx-1 font-bold hover:bg-white hover:text-black"
               >Login</a
             >
           </li>
@@ -35,12 +42,155 @@
           </p>
           <a
             href=""
-            class="text-black rounded-lg inline-block mt-2 bg-white px-8 py-2 text-xl mx-1 font-bold"
+            class="text-black rounded-lg inline-block mt-2 bg-white px-8 py-2 text-xl mx-1 font-bold hover:bg-black hover:text-white"
             >Contact Us</a
           >
         </div>
         <div class="w-2/4">
           <img class="h-64 w-full" src="images/resturent.jpeg" alt="" />
+        </div>
+      </section>
+
+      <section id="menu" class="px-12 py-10">
+        <h2 class="font-bold mb-8 text-3xl text-center">Our Menu</h2>
+
+        <div class="menu-wrapper flex flex-wrap justify-evenly gap-2">
+          <div class="card w-[48%] lg:w-[30%] mb-8 text-center">
+            <img
+              src="images/pizza.jpg"
+              alt=""
+              class="h-48 w-full rounded-t-lg"
+            />
+            <h4 class="font-bold mb-2 text-lg">Pizza</h4>
+            <p class="mb-2 flex items-center justify-center gap-1 font-bold">
+              <i class="fa-solid fa-indian-rupee-sign"></i> 299
+            </p>
+            <a
+              href=""
+              class="bg-black text-white px-4 py-1 rounded-md hover:bg-red-400 hover:text-white"
+              >Add to Cart</a
+            >
+          </div>
+          <div class="card w-[48%] lg:w-[30%] mb-8 text-center">
+            <img
+              src="images/sandwich.jpg"
+              alt=""
+              class="h-48 w-full rounded-t-lg"
+            />
+            <h4 class="font-bold mb-2 text-lg">Grilled Cheese Sandwich</h4>
+            <p class="mb-2 flex items-center justify-center gap-1 font-bold">
+              <i class="fa-solid fa-indian-rupee-sign"></i> 75
+            </p>
+            <a
+              href=""
+              class="bg-black text-white px-4 py-1 rounded-md hover:bg-red-400 hover:text-white"
+              >Add to Cart</a
+            >
+          </div>
+          <div class="card w-[48%] lg:w-[30%] mb-8 text-center">
+            <img
+              src="images/patties.jpg"
+              alt=""
+              class="h-48 w-full rounded-t-lg"
+            />
+            <h4 class="font-bold mb-2 text-lg">Paneer Patties</h4>
+            <p class="mb-2 flex items-center justify-center gap-1 font-bold">
+              <i class="fa-solid fa-indian-rupee-sign"></i> 25
+            </p>
+            <a
+              href=""
+              class="bg-black text-white px-4 py-1 rounded-md hover:bg-red-400 hover:text-white"
+              >Add to Cart</a
+            >
+          </div>
+          <div class="card w-[48%] lg:w-[30%] mb-8 text-center">
+            <img
+              src="images/samosa.jpg"
+              alt=""
+              class="h-48 w-full rounded-t-lg"
+            />
+            <h4 class="font-bold mb-2 text-lg">Samosa</h4>
+            <p class="mb-2 flex items-center justify-center gap-1 font-bold">
+              <i class="fa-solid fa-indian-rupee-sign"></i> 20
+            </p>
+            <a
+              href=""
+              class="bg-black text-white px-4 py-1 rounded-md hover:bg-red-400 hover:text-white"
+              >Add to Cart</a
+            >
+          </div>
+          <div class="card w-[48%] lg:w-[30%] mb-8 text-center">
+            <img
+              src="images/burger.webp"
+              alt=""
+              class="h-48 w-full rounded-t-lg"
+            />
+            <h4 class="font-bold mb-2 text-lg">Cheese Burger</h4>
+            <p class="mb-2 flex items-center justify-center gap-1 font-bold">
+              <i class="fa-solid fa-indian-rupee-sign"></i> 40
+            </p>
+            <a
+              href=""
+              class="bg-black text-white px-4 py-1 rounded-md hover:bg-red-400 hover:text-white"
+              >Add to Cart</a
+            >
+          </div>
+          <div class="card w-[48%] lg:w-[30%] mb-8 text-center">
+            <img
+              src="images/chaumin.webp"
+              alt=""
+              class="h-48 w-full rounded-t-lg"
+            />
+            <h4 class="font-bold mb-2 text-lg">Chowmein</h4>
+            <p class="mb-2 flex items-center justify-center gap-1 font-bold">
+              <i class="fa-solid fa-indian-rupee-sign"></i> 90
+            </p>
+            <a
+              href=""
+              class="bg-black text-white px-4 py-1 rounded-md hover:bg-red-400 hover:text-white"
+              >Add to Cart</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="chefs" class="px-12 py-10 bg-slate-500">
+        <h2 class="font-bold mb-8 text-3xl text-center">Our Chefs</h2>
+
+        <div class="chef-wrapper flex flex-wrap justify-evenly gap-4">
+          <div class="card w-[32%]">
+            <img
+              src="images/sanjeev.jpg"
+              alt=""
+              class="h-52 w-full rounded-t-lg"
+            />
+            <div class="bg-white p-2 text-center">
+              <p class="font-bold text-xl mb-2">Sanjeev Kapoor</p>
+              <p>Hotel Management (30 yr experience)</p>
+            </div>
+          </div>
+          <div class="card w-[32%]">
+            <img
+              src="images/ranvir_brar.webp"
+              alt=""
+              class="h-52 w-full rounded-t-lg"
+            />
+            <div class="bg-white p-2 text-center">
+              <p class="font-bold text-xl mb-2">Ranveer Brar</p>
+              <p>Hotel Management (10 yr experience)</p>
+            </div>
+          </div>
+          <div class="card w-[32%]">
+            <img
+              src="images/Vikas-Khanna.webp"
+              alt=""
+              class="h-52 w-full rounded-t-lg"
+            />
+            <div class="bg-white p-2 text-center">
+              <p class="font-bold text-xl mb-2">Vikas Khanna</p>
+              <p>Hotel Management (20 yr experience)</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
