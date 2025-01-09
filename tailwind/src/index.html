@@ -17,7 +17,10 @@
     <div id="wrapper">
       <header class="bg-rose-500 flex justify-between items-center px-12 py-8">
         <h1 class="font-bold text-3xl">Logo</h1>
-        <ul class="flex">
+        <a href="" class="block md:hidden text-3xl"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+        <ul class="hidden md:flex">
           <li><a href="" class="text-white px-2 mx-1">Home</a></li>
           <li><a href="" class="text-white px-2 mx-1">About</a></li>
           <li><a href="" class="text-white px-2 mx-1">Gallery</a></li>
@@ -33,8 +36,11 @@
         </ul>
       </header>
 
-      <section id="hero" class="bg-gray-500 py-20 px-12 flex items-center">
-        <div class="w-2/4 text-white">
+      <section
+        id="hero"
+        class="bg-gray-500 py-20 px-12 flex flex-col md:flex-row items-center"
+      >
+        <div class="w-full md:w-2/4 mb-4 md:mb-0 text-white">
           <h2 class="font-bold text-3xl mb-4">Chotu Chai Wala</h2>
           <p class="mb-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
@@ -46,7 +52,7 @@
             >Contact Us</a
           >
         </div>
-        <div class="w-2/4">
+        <div class="w-full md:w-2/4">
           <img class="h-64 w-full" src="images/resturent.jpeg" alt="" />
         </div>
       </section>
