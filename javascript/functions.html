@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <div id="wrapper"></div>
+    <script>
+      //   function fullName(f, l) {
+      //     return f + " " + l;
+      //   }
+      //   fullName("Virat", "Kohli");
+
+      //   function sum(a = 5, b = 5) {
+      //     return a + b;
+      //   }
+      //   console.log(sum(10, 10));
+      //   console.log(sum(10));
+      //   console.log(sum());
+
+      //CALLBACKS: a function calling another function
+
+      //   function sum(a, b) {
+      //     return a + b;
+      //   }
+
+      //   function paisaDouble(paisa) {
+      //     return paisa * paisa;
+      //   }
+
+      //   console.log(paisaDouble(sum(7, 7)));
+
+      //   function a(num, callback) {
+      //     return callback(num);
+      //   }
+      //   function b(x) {
+      //     if (x % 2 === 0) return x * x * x;
+      //     else return x * x;
+      //   }
+      //   console.log(a(5, b));
+
+      //ARRAYS
+      //   let num = [1, 2, 3, 4, 5];
+      //   let output = 0;
+
+      //   for (let i = 0; i < num.length; i++) {
+      //     output += num[i];
+      //   }
+
+      //   num.forEach((n) => (output += n));
+
+      // num.forEach((n) => {
+      //   output += n;
+      // });
+
+      //   num.forEach(() => {})
+
+      //   num.map((i) => (output += i));
+
+      //   let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      //   let output = 0;
+
+      //   num.forEach((n) => {
+      //     if (n % 2 === 0) output += n;
+      //   });
+      //   console.log(output);
+
+      // HIGHER ORDER FUNCTIONS:
+      // works on arrays
+      // takes function as first argument
+      // returns an array
+
+      //  - map, reduce, filter, find, findIndex, some, every
+
+      //   let names = ["Ram", "Shyam", "Raman", "Chaman", "Seeta", "Geeta"];
+      //   const newNames = names.map((name) => {
+      //     return name;
+      //   });
+
+      //   const newNames = names.filter((name) => {
+      //     return name.length > 4;
+      //   });
+      //   console.log(newNames);
+
+      //   const numbers = [1, 2, 3, 4, 5];
+      //   const squared = numbers.map((num) => num * num);
+      //   console.log("Squared Numbers:", squared);
+
+      const numbers = [1, 4, 1, 5, 2, 3, 1];
+      //   const newNumbers = numbers.reduce((acc, prev) => {
+      //     return acc * prev;
+      //   },0);
+
+      const newNumbers = numbers.some((num) => num > 2);
+      console.log(newNumbers);
+    </script>
+  </body>
+</html>
