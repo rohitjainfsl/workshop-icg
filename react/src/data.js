@@ -6,7 +6,7 @@ const data = [
     options: ["New Delhi", "Mumbai"],
   },
   {
-    q: "What is the president of India?",
+    q: "Who is the president of India?",
     a: "Draupadi Murmu",
     options: ["Narendra Modi", "Draupadi Murmu"],
   },
@@ -14,6 +14,11 @@ const data = [
     q: "Where is Taj Mahal located?",
     a: "Agra",
     options: ["Jaipur", "Agra"],
+  },
+  {
+    q: "Where is the world's tallest statue located?",
+    a: "Gujarat",
+    options: ["Gujarat", "Rajasthan"],
   },
 ];
 export default data;
