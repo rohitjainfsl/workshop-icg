@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <button id="inc">Increment</button>
+    <p>0</p>
+    <button id="dec">Decrement</button>
+    <script>
+      const incrmentBtn = document.getElementById("inc");
+      const decrmentBtn = document.getElementById("dec");
+      const para = document.getElementsByTagName("p")[0];
+
+      incrmentBtn.addEventListener("click", increment);
+      decrmentBtn.addEventListener("click", decrement);
+
+      function increment() {
+        para.innerHTML = Number(para.innerHTML) + 1;
+      }
+      function decrement() {
+        if (para.innerHTML > 0) para.innerHTML = Number(para.innerHTML) - 1;
+      }
+    </script>
+  </body>
+</html>
