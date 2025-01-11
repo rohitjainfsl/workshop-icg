@@ -13,8 +13,6 @@ function Home() {
 
   useEffect(() => {getProducts();}, []);
 
-  
-
   function trimContent(input) {
     return input.length > 40 ? input.slice(0, 41) + "..." : input;
   }
@@ -32,11 +30,11 @@ function Home() {
                   key={product.id}
                   className="w-[23%] mt-4 mb-2 bg-white px-4 py-4 rounded-md"
                 >
-                  <img
+                  <a href={`/product/${product.id}`}><img
                     src={product.image}
                     alt=""
                     className="w-full h-48 object-contain mb-2 mix-blend-multiply"
-                  />
+                  /></a>
                   <h4 className="mb-1">{trimContent(product.title)}</h4>
                   <p className="flex items-center font-bold mb-2">
                     ${product.price}
