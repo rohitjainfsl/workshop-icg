@@ -4,10 +4,7 @@ import "./index.css";
 // import Counter from "./Counter.jsx";
 // import App from "./App.jsx"
 // import UsingKeys from "./UsingKeys.jsx";
-import Home from "./ecommerce/Home.jsx";
-createRoot(document.getElementById("root")).render(<Home />);
+// import Home from "./ecommerce/Home.jsx";
+import Todo from "./todolist/Todo.jsx";
 
-// MyFunction()
-{
-  /* <MyFunction /> */
-}
+createRoot(document.getElementById("root")).render(<Todo />);
