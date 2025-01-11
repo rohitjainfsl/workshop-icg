@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GiShoppingBag } from "react-icons/gi";
 import { FaCartShopping } from "react-icons/fa6";
 
@@ -7,9 +7,13 @@ function Home() {
   const [products, setProducts] = useState([]);
   async function getProducts() {
     const data = await axios.get("https://fakestoreapi.in/api/products");
-    // console.log(data.data.products);
+    console.log(data.data.products);
     setProducts(data.data.products);
   }
+
+  useEffect(() => {getProducts();}, []);
+
+  
 
   function trimContent(input) {
     return input.length > 40 ? input.slice(0, 41) + "..." : input;
@@ -19,14 +23,7 @@ function Home() {
     <>
       <div className="min-h-screen h-full bg-slate-300">
         {products.length === 0 ? (
-          <div className="min-h-screen flex justify-center items-center">
-            <button
-              className="px-8 py-3 rounded-md border-2 border-black font-bold uppercase hover:bg-black hover:text-white hover:shadow-md"
-              onClick={getProducts}
-            >
-              Get Products
-            </button>
-          </div>
+          <div className="min-h-screen flex justify-center items-center"></div>
         ) : (
           <div className="flex flex-wrap gap-3 justify-evenly">
             {products.map((product) => {

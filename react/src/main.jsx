@@ -4,7 +4,7 @@ import "./index.css";
 // import Counter from "./Counter.jsx";
 // import App from "./App.jsx"
 // import UsingKeys from "./UsingKeys.jsx";
-// import Home from "./ecommerce/Home.jsx";
-import Todo from "./todolist/Todo.jsx";
+import First from "./ecommerce/First.jsx";
+// import Todo from "./todolist/Todo.jsx";
 
-createRoot(document.getElementById("root")).render(<Todo />);
+createRoot(document.getElementById("root")).render(<First />);
