@@ -3,10 +3,12 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { GiShoppingBag } from "react-icons/gi";
 import { FaCartShopping } from "react-icons/fa6";
+import { useCart } from "./CartContext";
 
 function SingleProduct() {
   const { id } = useParams();
   const [product, setProduct] = useState({});
+  const { addToCart } = useCart();
 
   useEffect(() => {
     getSingleProduct(id);
@@ -38,7 +40,7 @@ function SingleProduct() {
               <GiShoppingBag />
               &nbsp;Add to Wishlist
             </button>
-            <button className="flex items-center bg-pink-300 text-black text-sm px-2 py-2 rounded-md border-2 border-pink-300 hover:bg-white hover:text-pink-800 transition-all duration-300">
+            <button className="flex items-center bg-pink-300 text-black text-sm px-2 py-2 rounded-md border-2 border-pink-300 hover:bg-white hover:text-pink-800 transition-all duration-300" onClick={()=>addToCart(product)}>
               <FaCartShopping />
               &nbsp;Add to Cart
             </button>

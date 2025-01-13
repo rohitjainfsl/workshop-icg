@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useCart } from "../CartContext";
 
 function Header() {
+  const { cart } = useCart();
   return (
     <header className="bg-rose-400 flex px-12 py-2 justify-between items-center">
       <h1 className="font-bold text-2xl text-white">Ecommerce</h1>
@@ -16,8 +18,8 @@ function Header() {
           </Link>
         </li>
         <li>
-          <Link className="px-2 mx-2" to="/">
-            Cart
+          <Link className="px-2 mx-2" to="/cart">
+            Cart ({cart.length})
           </Link>
         </li>
         <li>

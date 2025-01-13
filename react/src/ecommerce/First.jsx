@@ -3,6 +3,8 @@ import Home from "./Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SingleProduct from "./SingleProduct";
+import Cart from "./Cart";
+import { CartProvider } from "./CartContext";
 
 const router = createBrowserRouter([
   {
@@ -25,8 +27,22 @@ const router = createBrowserRouter([
       </>
     ),
   },
+  {
+    path: "/cart",
+    element: (
+      <>
+        <Header />
+        <Cart />
+        <Footer />
+      </>
+    ),
+  },
 ]);
 function First() {
-  return <RouterProvider router={router}></RouterProvider>;
+  return (
+    <CartProvider>
+      <RouterProvider router={router}></RouterProvider>;
+    </CartProvider>
+  );
 }
 export default First;

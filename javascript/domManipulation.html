@@ -14,13 +14,15 @@
       const decrmentBtn = document.getElementById("dec");
       const para = document.getElementsByTagName("p")[0];
 
-      incrmentBtn.addEventListener("click", increment);
-      decrmentBtn.addEventListener("click", decrement);
+      incrmentBtn.addEventListener("click", () =>increment());
+      decrmentBtn.addEventListener("click", () =>decrement());
 
       function increment() {
+        console.log("executed on page load");
         para.innerHTML = Number(para.innerHTML) + 1;
       }
       function decrement() {
+        console.log("executed on page load");
         if (para.innerHTML > 0) para.innerHTML = Number(para.innerHTML) - 1;
       }
     </script>
