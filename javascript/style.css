@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 48px;
+  align-items: center;
+  background-color: azure;
+  margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 400ms;
+}
+header.scrolled {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+header ul a {
+  text-decoration: none;
+}
+section {
+  margin-top: 100px;
+}
