@@ -1,28 +1,31 @@
 import { useState } from "react";
 
-function Form({ input, setInput, tasks, setTasks }) {
+function Form({ input, setInput, handleSubmit }) {
   //   function changeInput(e) {
   //     setInput(e.target.value);
   //   }
-  function handleSubmit(e) {
-    e.preventDefault();
-    setTasks([...tasks, input]);
-    
-  }
-  console.log(tasks);
+  
+  
   return (
     <>
-      <form action="" className="my-4" onSubmit={handleSubmit}>
+      <form
+        action=""
+        className="my-4 flex items-center"
+        onSubmit={handleSubmit}
+      >
         <input
           type="text"
           placeholder="Enter your task"
-          className="p-3 mb-4 border-2 rounded"
+          className="p-3 border-2 rounded w-3/4"
           value={input}
           //   onChange={changeInput}
           onChange={(e) => setInput(e.target.value)}
         />
         <br />
-        <button type="submit" className="px-4 py-2 bg-black text-white rounded">
+        <button
+          type="submit"
+          className="p-3 w-1/4 border-2 bg-black text-white rounded"
+        >
           Add Task
         </button>
       </form>
